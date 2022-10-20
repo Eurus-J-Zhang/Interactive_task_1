@@ -6,7 +6,7 @@ function fn1(){
     // var rd1 = document.getElementById("A");
     // var rd2 = document.getElementById("B");
     // if (rd1.checked == true)
-    window.location="https://link.webropolsurveys.com/S/6466A217FA3A3813";
+    window.location="../0_end/index.html";
     // else if (rd2.checked == true)
         // window.location="../page5/index.html";
 }
