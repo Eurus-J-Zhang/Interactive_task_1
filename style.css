@@ -1,10 +1,10 @@
 .grid-parent{
     display: grid;
-    grid-template-rows: 80px 80px auto auto 70px auto;
+    grid-template-rows: 30px  80px auto 200px 50px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
+    margin-top: auto; 
     margin-bottom: auto;
 }
 
@@ -28,24 +28,20 @@
 
 .question{
     font-size: 18px;
-    background-color: white;
 }
 
 .choices{
     font-size: 18px;
-    background-color: white;
-
 }
 
-
-.t_note{
+.continue{
     margin-left: 10%;
     margin-right: 10%;
 }
 
-.content{
-    display: grid;
-    grid-template-columns: 2fr 3fr;
+.t_note{
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 form {
@@ -53,12 +49,8 @@ form {
     line-height: 200%;
 }
 
-.continue{
-    margin-left: 10%;
-}
-
 .submitbutton{
-    background-color: #A0A0A0; 
+    background-color: #4CAF50; /* Green */
     border: none;
     color: white;
     border-radius: 12px;
@@ -67,4 +59,5 @@ form {
     text-align: center;
     font-size: 16px;
     cursor: pointer;
+    float: right;
 }
