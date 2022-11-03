@@ -4,9 +4,6 @@
         <link rel= "stylesheet" href="../style_f.css">
         <link rel="shortcut icon" href="#">
         <title>CSS Position</title>
-        <style>
-        </style>
-        
     </head>
     <body>     
         <div class="grid-parent">
@@ -34,29 +31,31 @@
                 <p class="t_note">
                     Question 10:  <br>
                     <br>
-                    Who was taking care of Friedrich Nietzsche before his death?
+                    Why did Leonardo’s discoveries have limited influence on subsequent science?
                     <br>
                  </p>
                 <form id="form">
                     <input type="radio" id="A" name="answer" value="A">
-                    <label for="A">His mother.</label><br>
+                    <label for="A">Because they were too advanced of his time.</label><br>
                     <input type="radio" id="B" name="answer" value="B">
-                    <label for="B">His sister.</label><br>
+                    <label for="B">Because Leonardo didn’t publish his findings.</label><br>
                   </form>
             </div>
             <div class="result">
                 <p id = "this_result">Wrong! Please continue.</p>
             </div>
             <div class = "continue">   
-                <!-- <form action="../page4/index.html">
-                    <input class = "submitbutton" type="submit" value="Continue" />
-                </form> -->
                 <button onclick="fn1()" id="btn1" class = "submitbutton">Continue</button>
             </div>
         </div>
            
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-        <script src="script.js"></script>
+        <script>
+            $("#A").prop("checked", true);
+
+            function fn1(){
+                window.location="../0_end/index.html";
+            }
+        </script>
     </body>
 </html>
