@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel= "stylesheet" href="../style_f.css">
+        <link rel= "stylesheet" href="../style_t.css">
         <link rel="shortcut icon" href="#">
         <title>Interactive Task</title>
 
@@ -44,19 +44,19 @@
             </div>
             <div class = "choices"> 
                 <p class="t_note">
-                    Question 17:  <br>
+                    Question 29:  <br>
                     <br>
-                    Which of the following is Leonardo’s design?<br>
+                    In which year was Salvator Mundi sold?<br>
                 </p>
                 <form id="form">
                     <input type="radio" id="A" name="answer" value="A">
-                    <label for="A">Flying machine.</label><br>
+                    <label for="A">2017</label><br>
                     <input type="radio" id="B" name="answer" value="B">
-                    <label for="B">Bicycle.</label><br>
+                    <label for="B">2019</label><br>
                 </form>
             </div>
             <div class="result">
-                <p id = "this_result">Wrong! Please continue.</p>
+                <p id = "this_result">Correct! Please continue.</p>
             </div>
             <div class = "continue">   
                 <button onclick="fn1()" id="btn1" class = "submitbutton">Continue</button>
@@ -65,10 +65,10 @@
            
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
         <script>
-            $("#B").prop("checked", true);
+            $("#A").prop("checked", true);
 
             function fn1(){
-                window.location="../18_M/index.html";
+                window.location="../30_M/index.html";
             }
         </script>
     </body>
