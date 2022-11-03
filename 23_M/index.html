@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel= "stylesheet" href="../style_f.css">
+        <link rel= "stylesheet" href="../style_m.css">
         <link rel="shortcut icon" href="#">
         <title>Interactive Task</title>
 
@@ -10,6 +10,7 @@
         <div class="grid-parent">
 
             <div class = "title name"> 
+
             </div>
             <div class = "instruction"> 
                 <p class="t_note">
@@ -44,31 +45,32 @@
             </div>
             <div class = "choices"> 
                 <p class="t_note">
-                    Question 10:  <br>
+                    Question 23:  <br>
                     <br>
-                    How many years did Leonardo live?<br>
+                    What does polymath mean?<br>
                 </p>
                 <form id="form">
                     <input type="radio" id="A" name="answer" value="A">
-                    <label for="A">57.</label><br>
+                    <label for="A">A person who has great talent in math. </label><br>
                     <input type="radio" id="B" name="answer" value="B">
-                    <label for="B">67.</label><br>
+                    <label for="B">A person of wide-ranging knowledge or learning.</label><br>
                 </form>
             </div>
-            <div class="result">
-                <p id = "this_result">Wrong! Please continue.</p>
-            </div>
+            <div class="result"></div>
             <div class = "continue">   
-                <button onclick="fn1()" id="btn1" class = "submitbutton">Continue</button>
+                <button onclick="fn1()" id="btn1" class = "submitbutton">Submit</button>
             </div>
         </div>
            
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
         <script>
-            $("#A").prop("checked", true);
-
             function fn1(){
-                window.location="../11_M/index.html";
+                var rd1 = document.getElementById("A");
+                var rd2 = document.getElementById("B");
+                if (rd1.checked == true)
+                    window.location="../23_F/index.html";
+                else if (rd2.checked == true)
+                    window.location="../23_T/index.html";    
             }
         </script>
     </body>
