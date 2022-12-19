@@ -4,7 +4,6 @@
         <link rel= "stylesheet" href="../style_f.css">
         <link rel="shortcut icon" href="#">
         <title>Interactive Task</title>
-
     </head>
     <body>     
         <div class="grid-parent">
@@ -33,23 +32,23 @@
                     the European Union and many other world and regional international organisations. It is 
                     the most widely spoken Germanic language, accounting for at least 70% of speakers of this 
                     Indo-European branch.
-                </p>
             </div>
             <div class = "choices"> 
                 <p class="t_note">
                     Question 28:  <br>
                     <br>
-                    What is the most spoken native language in the world?<br>
-                </p>
+                    Is English widely spoken in South America?
+                    <br>
+                 </p>
                 <form id="form">
                     <input type="radio" id="A" name="answer" value="A">
-                    <label for="A">Chinese.</label><br>
+                    <label for="A">Yes, it is.</label><br>
                     <input type="radio" id="B" name="answer" value="B">
-                    <label for="B">English.</label><br>
-                </form>
+                    <label for="B">No, it isn't.</label><br>
+                  </form>
             </div>
             <div class="result">
-                <p id = "this_result">Wrong! Please continue.</p>
+                <p id = "this_result"><span>&#x2717;</span></p>
             </div>
             <div class = "continue">   
                 <button onclick="fn1()" id="btn1" class = "submitbutton">Continue</button>
@@ -58,7 +57,7 @@
            
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
         <script>
-            $("#B").prop("checked", true);
+            $("#A").prop("checked", true);
 
             function fn1(){
                 window.location="../29_M/index.html";

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel= "stylesheet" href="../style_m.css">
+        <link rel="shortcut icon" href="#">
+        <title>Interactive Task</title>
+
+    </head>
+    <body>     
+        <div class="grid-parent">
+
+            <div class = "title name"> 
+
+            </div>
+            <div class = "instruction"> 
+                <p class="t_note">
+                Please answer the question.</p>
+            </div>
+            <div class = "story"> 
+                <p class="t_note">
+                    Modern English has spread around the world since the 17th century as a consequence of 
+                    the worldwide influence of the British Empire and the United States of America. 
+                    Through all types of printed and electronic media of these countries, English has become 
+                    the leading language of international discourse and the lingua franca in many regions and 
+                    professional contexts such as science, navigation and law. English is the most spoken language 
+                    in the world and the third-most spoken native language in the world, after Standard Chinese 
+                    and Spanish. It is the most widely learned second language and is either the official language 
+                    or one of the official languages in 59 sovereign states. There are more people who have 
+                    learned English as a second language than there are native speakers. As of 2005, it was 
+                    estimated that there were over 2 billion speakers of English. English is the majority 
+                    native language in the United Kingdom, the United States, Canada, Australia, New Zealand and 
+                    the Republic of Ireland, and is widely spoken in some areas of the Caribbean, Africa, 
+                    South Asia, Southeast Asia, and Oceania. It is a co-official language of the United Nations, 
+                    the European Union and many other world and regional international organisations. It is 
+                    the most widely spoken Germanic language, accounting for at least 70% of speakers of this 
+                    Indo-European branch.
+                </p>
+            </div>
+            <div class = "choices"> 
+                <p class="t_note">
+                    Question 33:  <br>
+                    <br>
+                    What is the most spoken Germanic language?<br>
+                </p>
+                <form id="form">
+                    <input type="radio" id="A" name="answer" value="A">
+                    <label for="A">German.</label><br>
+                    <input type="radio" id="B" name="answer" value="B">
+                    <label for="B">English.</label><br>
+                </form>
+            </div>
+            <div class="result"></div>
+            <div class = "continue">   
+                <button onclick="fn1()" id="btn1" class = "submitbutton">Submit</button>
+            </div>
+        </div>
+           
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+        <script>
+            function fn1(){
+                var rd1 = document.getElementById("A");
+                var rd2 = document.getElementById("B");
+                if (rd1.checked == true)
+                    window.location="../33_F/index.html";
+                else if (rd2.checked == true)
+                    window.location="../33_T/index.html";    
+            }
+        </script>
+    </body>
+</html>

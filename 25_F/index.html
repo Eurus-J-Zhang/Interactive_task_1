@@ -3,7 +3,7 @@
     <head>
         <link rel= "stylesheet" href="../style_f.css">
         <link rel="shortcut icon" href="#">
-        <title>CSS Position</title>
+        <title>Interactive Task</title>
     </head>
     <body>     
         <div class="grid-parent">
@@ -37,18 +37,18 @@
                 <p class="t_note">
                     Question 25:  <br>
                     <br>
-                    Is English widely spoken in South America?
+                    Does the US influence the spread of modern English?
                     <br>
                  </p>
                 <form id="form">
                     <input type="radio" id="A" name="answer" value="A">
-                    <label for="A">Yes, it is.</label><br>
+                    <label for="A">Yes, it does.</label><br>
                     <input type="radio" id="B" name="answer" value="B">
-                    <label for="B">No, it isn't.</label><br>
+                    <label for="B">No, it doesn't.</label><br>
                   </form>
             </div>
             <div class="result">
-                <p id = "this_result">Wrong! Please continue.</p>
+                <p id = "this_result"><span>&#x2717;</span></p>
             </div>
             <div class = "continue">   
                 <button onclick="fn1()" id="btn1" class = "submitbutton">Continue</button>
@@ -57,7 +57,7 @@
            
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
         <script>
-            $("#A").prop("checked", true);
+            $("#B").prop("checked", true);
 
             function fn1(){
                 window.location="../26_M/index.html";

@@ -39,27 +39,27 @@
                 <p class="t_note">
                     Question 28:  <br>
                     <br>
-                    What is the most spoken native language in the world?<br>
-                </p>
+                    Is English widely spoken in South America?
+                    <br>
+                 </p>
                 <form id="form">
                     <input type="radio" id="A" name="answer" value="A">
-                    <label for="A">Chinese.</label><br>
+                    <label for="A">Yes, it is.</label><br>
                     <input type="radio" id="B" name="answer" value="B">
-                    <label for="B">English.</label><br>
-                </form>
+                    <label for="B">No, it isn't.</label><br>
+                  </form>
             </div>
             <div class="result">
-                <p id = "this_result">Correct, please continue.</p>
+                <p id = "this_result"><span>&#10003;</span></p>
             </div>
-            <div class = "continue">   
+            <div class = "continue">  
                 <button onclick="fn1()" id="btn1" class = "submitbutton">Continue</button>
             </div>
         </div>
            
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
         <script>
-            $("#A").prop("checked", true);
-
+            $("#B").prop("checked", true);
             function fn1(){
                 window.location="../29_M/index.html";
             }
